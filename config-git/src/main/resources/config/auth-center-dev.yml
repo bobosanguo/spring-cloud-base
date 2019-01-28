@@ -43,7 +43,7 @@ spring:
   freemarker:
       request-context-attribute: request
   rabbitmq:
-      host: rabbitmq.bcop.com
+      host: rabbitmq.abc.com
       port: 5672
       username: guest
       password: guest

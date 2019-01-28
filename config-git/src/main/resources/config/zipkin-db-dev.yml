@@ -11,7 +11,7 @@ spring:
   sleuth:
     enabled: false
   rabbitmq:
-    host: rabbitmq.bcop.com
+    host: rabbitmq.abc.com
     port: 5672
     password: guest
     username: guest

@@ -3,7 +3,7 @@ server:
 
 spring:
   rabbitmq:
-    host: rabbitmq.bcop.com
+    host: rabbitmq.abc.com
     port: 5672
     password: guest
     username: guest
@@ -27,7 +27,7 @@ security:
   oauth2:
     resource:
       jwt:
-        key-uri: http://${AUTH_CENTER_HOST:adminsso.bcop.com}:${AUTH_CENTER_PORT:18001}/auth/oauth/token_key
+        key-uri: http://${AUTH_CENTER_HOST:adminsso.abc.com}:${AUTH_CENTER_PORT:18001}/auth/oauth/token_key
       id: ${spring.application.name}
       serviceId: ${spring.application.name}
 

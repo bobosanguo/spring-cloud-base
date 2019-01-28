@@ -36,7 +36,7 @@ spring:
       port: ${REDIS_PORT:6379}
       password: "bcop123"
   rabbitmq:
-      host: rabbitmq.bcop.com
+      host: rabbitmq.abc.com
       port: 5672
       username: guest
       password: guest
