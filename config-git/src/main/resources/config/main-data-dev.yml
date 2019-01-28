@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/main-data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: fangp
-      password: "000000"
+      url: jdbc:mysql://${MYSQL_HOST:vip.coredb.op.core}:${MYSQL_PORT:3306}/main-data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: test
+      password: "d#Vg_1B2lo"
       driver-class-name: com.mysql.jdbc.Driver
       max-active: 20
       initial-size: 1
@@ -32,13 +32,14 @@ spring:
         login-password: "000000"
   redis:
       database: 0
-      host: ${REDIS_HOST:localhost}
+      host: ${REDIS_HOST:vm.redismq1.op.core}
       port: ${REDIS_PORT:6379}
+      password: "bcop123"
   rabbitmq:
-      host: localhost
+      host: rabbitmq.bcop.com
       port: 5672
-      username: fangp
-      password: '000000'
+      username: guest
+      password: guest
 # 权限配置
 security:
   ignored: |
@@ -58,3 +59,5 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
 logging:
   file: logs/main-data.log
+  level:
+    root: debug

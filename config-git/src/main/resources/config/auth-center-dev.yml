@@ -9,13 +9,14 @@ server:
 spring:
   redis:
     database: 0
-    host: ${REDIS_HOST:localhost}
+    host: ${REDIS_HOST:vm.redismq1.op.core}
     port: ${REDIS_PORT:6379}
+    password: "bcop123"
   datasource:
     druid:
-      url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/main-data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-      username: fangp
-      password: "000000"
+      url: jdbc:mysql://${MYSQL_HOST:vip.coredb.op.core}:${MYSQL_PORT:3306}/main-data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: test
+      password: "d#Vg_1B2lo"
       driver-class-name: com.mysql.jdbc.Driver
       max-active: 20
       initial-size: 1
@@ -42,9 +43,9 @@ spring:
   freemarker:
       request-context-attribute: request
   rabbitmq:
-      host: localhost
+      host: rabbitmq.bcop.com
       port: 5672
-      username: fangp
-      password: '000000'
+      username: guest
+      password: guest
 logging:
   file: logs/auth-center.log

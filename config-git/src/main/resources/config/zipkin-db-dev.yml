@@ -5,16 +5,16 @@ spring:
   # datasoure默认使用JDBC
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: fangp
-    password: '000000'
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/zipkin?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: test
+    password: 'd#Vg_1B2lo'
+    url: jdbc:mysql://${MYSQL_HOST:vip.coredb.op.core}:${MYSQL_PORT:3306}/zipkin?useUnicode=true&characterEncoding=UTF-8&useSSL=false
   sleuth:
     enabled: false
   rabbitmq:
-    host: localhost
+    host: rabbitmq.bcop.com
     port: 5672
-    password: '000000'
-    username: fangp
+    password: guest
+    username: guest
 
 zipkin:
   storage:

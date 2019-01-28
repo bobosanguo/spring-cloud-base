@@ -3,10 +3,10 @@ server:
 
 spring:
    rabbitmq:
-        host: localhost
+        host: rabbitmq.bcop.com
         port: 5672
-        username: fangp
-        password: '000000'
+        username: guest
+        password: guest
 
 logging:
   file: logs/mc-service.log

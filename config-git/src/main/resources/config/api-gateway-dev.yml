@@ -3,10 +3,10 @@ server:
 
 spring:
   rabbitmq:
-    host: localhost
+    host: rabbitmq.bcop.com
     port: 5672
-    password: '000000'
-    username: fangp
+    password: guest
+    username: guest
 
 zuul:
   routes:
@@ -27,7 +27,7 @@ security:
   oauth2:
     resource:
       jwt:
-        key-uri: http://${AUTH_CENTER_HOST:localhost}:${AUTH_CENTER_PORT:18001}/auth/oauth/token_key
+        key-uri: http://${AUTH_CENTER_HOST:adminsso.bcop.com}:${AUTH_CENTER_PORT:18001}/auth/oauth/token_key
       id: ${spring.application.name}
       serviceId: ${spring.application.name}
 
