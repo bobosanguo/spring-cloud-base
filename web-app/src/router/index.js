@@ -8,12 +8,18 @@ import 'nprogress/nprogress.css'
 Vue.use(Router)
 
 var router = new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Main',
       component: resolve => require(['@/components/Main.vue'], resolve),
       children: [
+        {
+          path: '/',
+          name: 'Default',
+          component: resolve => require(['@/components/user/UserManaged.vue'], resolve)
+        },
         {
           path: '/user',
           name: 'UserManaged',

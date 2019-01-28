@@ -8,13 +8,13 @@ window.serverconf = {
   appSecret: 'test',
   production: {
     // nginx 代理
-    baseUrl: 'http://www.mxclass.cn',
-    authUrl: 'http://www.mxclass.cn/auth',
-    baseURL: 'http://www.mxclass.cn'
+    baseUrl: 'http://10.254.4.50:8008',
+    authUrl: 'http://10.254.4.50:8008/auth',
+    baseURL: 'http://10.254.4.50:8008'
   },
   development: {
-    baseUrl: 'http://127.0.0.1:8080',
-    authUrl: 'http://127.0.0.1:18001/auth',
-    baseURL: 'http://127.0.0.1:18000'
+    baseUrl: 'http://ecloud.10086.cn:8008',
+    authUrl: 'http://ecloud.10086.cn:18001/auth',
+    baseURL: 'http://ecloud.10086.cn:18000'
   }
 }
